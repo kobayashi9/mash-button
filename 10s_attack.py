@@ -42,7 +42,7 @@ class mush10s:
 		else:
 			btn2 = tk.Button(root, text="result", command=self.result)
 			btn2.place(x=400, y=350)
-		#print(self.cnt)
+		print(self.cnt)
 
 if __name__ == "__main__":
 	root = tk.Tk()
