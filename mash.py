@@ -1,6 +1,6 @@
 #from tkinter import * 
 import tkinter as tk
-class Mush10s:
+class Mash10s:
 	def __init__(self, root):
 		root.title("Mush Button")
 		self.f1 = tk.Frame(root, height=400, width=600) 
@@ -22,7 +22,7 @@ class Mush10s:
 		self.timer()
 
 	def firstPage(self):
-		tk.Label(self.f1, text='Mush Button', font=('Helvetica', '60')).pack()
+		tk.Label(self.f1, text='Mash Button', font=('Helvetica', '60')).pack()
 		#Button(self.f1, text='Go to frame 2', command=lambda:self.changePage(self.f2)).pack() 
 		tk.Button(self.f1, text='Start', command=self.start).place(x=260, y=300)
 	
@@ -64,4 +64,4 @@ class Mush10s:
 
 if __name__ == "__main__":
 	root = tk.Tk()
-	Mush10s(root)
+	Mash10s(root)
