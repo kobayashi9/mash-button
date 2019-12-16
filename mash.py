@@ -26,12 +26,6 @@ class Mash10s:
 		tk.Label(self.f1, text='Mash Button', font=('Helvetica', '60')).pack()
 		tk.Button(self.f1, text='Start', command=self.start).place(x=260, y=300)
 	
-	def back2title(self):
-		self.ready_t = 3
-		self.t = 10
-		self.cnt = 0
-		self.changePage(self.f1)
-
 	def playPage(self):
 		tk.Label(self.f3, text='Click!!', font=('Helvetica', '60')).pack() 
 		push_btn = tk.Button(self.f3, text='Click', command=self.counter).place(x=260, y=300)
