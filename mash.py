@@ -10,6 +10,7 @@ class Mash10s:
 		for frame in (self.f1, self.f2, self.f3, self.f4): 
 		    frame.grid(row=0, column=1, sticky='news')
 		self.res_label = tk.Label(self.f4, text="{} times", font=('Helvetica', '60'))
+		self.t_label = tk.Label(self.f3, text="", font=('Helvetica', '50'))
 		self.firstPage()
 		self.playPage()
 		self.changePage(self.f1) 
@@ -51,6 +52,9 @@ class Mash10s:
 			self.ready_t -= 1
 			root.after(1000, self.timer)
 		elif self.t >= 0:
+			self.t_label.place_forget()
+			self.t_label = tk.Label(self.f3, text=self.t, font=('Helvetica', '50'))
+			self.t_label.place(x=270, y=100)
 			root.after(1000, self.timer)
 			self.t -= 1
 		else:
