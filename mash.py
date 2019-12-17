@@ -2,7 +2,7 @@ import tkinter as tk
 
 class Mash10s:
 	def __init__(self, root):
-		root.title("Mush Button")
+		root.title("Mash Button")
 		self.f1 = tk.Frame(root, height=400, width=600) 
 		self.f2 = tk.Frame(root, height=400, width=600) 
 		self.f3 = tk.Frame(root, height=400, width=600) 
